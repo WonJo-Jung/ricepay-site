@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Head from "next/head";
 
 export default function Home() {
@@ -22,6 +23,8 @@ export default function Home() {
         <a href="/privacy">Privacy Policy</a>
         <a href="/terms"><br></br><br></br>Terms of Service</a>
         <a href="/support"><br></br><br></br>Support</a>
+
+        <SpeedInsights />
       </main>
     </>
   );
