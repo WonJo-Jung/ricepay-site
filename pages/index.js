@@ -13,11 +13,15 @@ export default function Home() {
 
       <main style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
         <h1>RICE Pay</h1>
-        <p>Fast and simple USDC transfers on Base.</p>
+        <p>Fast and simple USDC transfers on Base Network.</p>
+        <p>RICE Pay enables users to send USDC directly from their own wallets.</p>
+        <p>We do not hold or custody user funds.</p>
 
-        <p><a href="/privacy">Privacy Policy</a></p>
-        <p><a href="/terms">Terms of Service</a></p>
-        <p><a href="/support">Support</a></p>
+        <p>Contact: support@ricepay.app</p>
+
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms"><br></br><br></br>Terms of Service</a>
+        <a href="/support"><br></br><br></br>Support</a>
       </main>
     </>
   );
