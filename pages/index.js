@@ -15,7 +15,7 @@ export default function Home() {
 
       <main style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
         <h1>RICE Pay</h1>
-        <p>Fast and simple USDC transfers on Base Network.</p>
+        <p>Fast, simple, non-custodial USDC transfers on Base Network.</p>
         <p>RICE Pay enables users to send USDC directly from their own wallets.</p>
         <p>We do not hold or custody user funds.</p>
 
