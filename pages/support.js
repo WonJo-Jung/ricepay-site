@@ -1,52 +1,44 @@
-import Head from "next/head";
+import { COMPANY_NAME, COMPANY_ADDRESS, SUPPORT_EMAIL } from "../constants";
 
 export default function SupportPage() {
   return (
-    <>
-      <Head>
-        <title>Support | RICE Pay</title>
-        <meta
-          name="description"
-          content="Support information for RICE Pay."
-        />
-      </Head>
+    <div className="legal-page">
+      <div className="legal-container glass-card">
+        <h1 className="text-white font-extrabold text-3xl mb-2">Support</h1>
+        <p className="text-green-500 text-sm font-medium mb-8">RICE Pay Support Information</p>
 
-      <main className="legal-page">
-        <div className="legal-container">
-          <h1>Support</h1>
-          <p className="legal-updated">RICE Pay Support Information</p>
-
+        <div className="space-y-6 text-gray-400">
           <p>
-            For support inquiries related to RICE Pay, please contact us at:
+          For support inquiries related to RICE Pay, please contact us at:
           </p>
 
-          <p>
-            <strong>Email:</strong>{" "}
-            <a href="mailto:support@ricepay.app">support@ricepay.app</a>
+          <p className="bg-white/5 p-4 rounded-2xl border border-white/10 inline-block">
+          <strong>Email:</strong>{" "}
+          <a href={`mailto:${SUPPORT_EMAIL}`} className="text-green-500 hover:underline">{SUPPORT_EMAIL}</a>
           </p>
 
-          <h2>Company</h2>
+          <h2 className="text-white text-xl font-bold mt-8">Company</h2>
           <p>
-            Unitas Atlas Global LLC
-            <br />
-            30 N Gould St Ste R, Sheridan, WY 82801, USA
+          {COMPANY_NAME}
+          <br />
+          {COMPANY_ADDRESS}
           </p>
 
-          <h2>Typical Support Topics</h2>
-          <ul>
-            <li>Transaction status</li>
-            <li>Failed transfers</li>
-            <li>Fee questions</li>
-            <li>Technical issues</li>
+          <h2 className="text-white text-xl font-bold mt-8">Typical Support Topics</h2>
+          <ul className="list-disc pl-5 space-y-2">
+          <li>Transaction status</li>
+          <li>Failed transfers</li>
+          <li>Fee questions</li>
+          <li>Technical issues</li>
           </ul>
 
-          <h2>Important Notice</h2>
-          <p>
-            RICE Pay is a non-custodial service. We do not hold user funds,
-            private keys, or seed phrases.
+          <h2 className="text-white text-xl font-bold mt-8">Important Notice</h2>
+          <p className="p-4 bg-orange-500/10 border border-orange-500/20 rounded-2xl text-orange-200/80">
+          RICE Pay is a non-custodial service. We do not hold user funds,
+          private keys, or seed phrases.
           </p>
         </div>
-      </main>
-    </>
+      </div>
+    </div>
   );
 }
