@@ -13,15 +13,16 @@ export default function Layout({ children, title, description }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title || "RICE Pay | Simple USDC Transfers on Base"}</title>
         <meta name="description" content={description || "A non-custodial app for sending USDC on Base."} />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
       </Head>
 
       <nav className="fixed w-full z-[100] px-6 py-4 bg-black/50 backdrop-blur-md border-b border-white/5">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link href="/" className="text-xl font-extrabold tracking-tighter flex items-center gap-2 text-white">
-            <span className="text-green-500 text-2xl">🌾</span> RICE Pay
+            <img src="/ricepay-logo.svg" alt="" className="h-8 w-8 rounded-lg" /> RICE Pay
           </Link>
 
           {/* Desktop Menu */}

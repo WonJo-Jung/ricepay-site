@@ -1,4 +1,5 @@
 import { APP_STORE_LINK } from "../constants";
+import SocialLinks from "../components/SocialLinks";
 
 export default function Home() {
   return (
@@ -150,6 +151,8 @@ export default function Home() {
           </button>
         </div>
       </section>
+
+      <SocialLinks />
     </>
   );
 }

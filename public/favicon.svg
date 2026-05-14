@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+<title id="title">RICE Pay logo</title>
+<desc id="desc">Vectorized RICE Pay app icon with blue rice-leaf mark on a white rounded square background.</desc>
+<defs>
+<filter id="softEdge" x="-2%" y="-2%" width="104%" height="104%"><feGaussianBlur stdDeviation="0"/></filter>
+<linearGradient id="g0" gradientUnits="userSpaceOnUse" x1="577" y1="126" x2="788" y2="433">
+<stop offset="0" stop-color="#4dbde5"/>
+<stop offset="1" stop-color="#4dbde5"/>
+</linearGradient>
+<linearGradient id="g1" gradientUnits="userSpaceOnUse" x1="392" y1="241" x2="523" y2="595">
+<stop offset="0" stop-color="#1a7cc5"/>
+<stop offset="1" stop-color="#1b7cc5"/>
+</linearGradient>
+<linearGradient id="g2" gradientUnits="userSpaceOnUse" x1="446" y1="381" x2="791" y2="871">
+<stop offset="0" stop-color="#1c7cc5"/>
+<stop offset="1" stop-color="#1e7dc4"/>
+</linearGradient>
+<linearGradient id="g3" gradientUnits="userSpaceOnUse" x1="278" y1="466" x2="415" y2="838">
+<stop offset="0" stop-color="#1a7cc5"/>
+<stop offset="1" stop-color="#1b7cc5"/>
+</linearGradient>
+</defs>
+<rect x="0" y="0" width="1024" height="1024" rx="250" ry="250" fill="#fff"/>
+<path d="M 784 127 L 775 128 L 751 140 L 706 170 L 666 204 L 640 231 L 624 252 L 604 286 L 586 334 L 577 396 L 577 426 L 580 431 L 586 431 L 606 421 L 664 385 L 707 347 L 733 315 L 759 269 L 775 225 L 781 200 L 787 154 L 787 132 Z" fill="url(#g0)"/>
+<path d="M 500 241 L 494 241 L 483 249 L 458 274 L 434 305 L 411 346 L 401 372 L 395 396 L 392 420 L 392 452 L 397 487 L 407 525 L 418 554 L 433 585 L 440 594 L 445 594 L 452 585 L 483 517 L 507 449 L 518 402 L 522 371 L 521 316 L 512 269 L 506 250 Z" fill="url(#g1)"/>
+<path d="M 789 382 L 730 392 L 640 430 L 567 480 L 523 529 L 490 589 L 460 682 L 446 795 L 446 850 L 452 870 L 460 869 L 476 853 L 549 756 L 652 659 L 675 627 L 655 626 L 609 642 L 505 705 L 502 696 L 507 680 L 529 638 L 569 596 L 657 542 L 695 511 L 759 438 L 788 393 Z" fill="url(#g2)"/>
+<path d="M 300 466 L 295 474 L 288 498 L 278 560 L 279 611 L 288 660 L 305 709 L 331 758 L 371 811 L 396 836 L 402 837 L 408 817 L 413 777 L 414 709 L 408 665 L 400 630 L 381 577 L 353 525 L 320 480 L 306 467 Z" fill="url(#g3)"/>
+</svg>
