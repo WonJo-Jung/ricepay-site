@@ -53,6 +53,7 @@ export default function Layout({ children, title, description }) {
             <Link href="/#features" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>Features</Link>
             <Link href="/#how-it-works" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>How it works</Link>
             <Link href="/#faq" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
+            <Link href="/support" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>Support</Link>
             <a href={APP_STORE_LINK} className="bg-green-500 text-black py-3 rounded-xl font-bold">Download App</a>
           </div>
         )}

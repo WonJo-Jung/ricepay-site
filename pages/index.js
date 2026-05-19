@@ -129,7 +129,7 @@ export default function Home() {
                   <source src={step.videoSrc} type="video/mp4" />
                 </video>
               </div>
-              <div className="text-5xl font-black text-white/10">{step.number}</div>
+              <div className="text-5xl font-black text-green-400/80">{step.number}</div>
               <h3 className="text-xl font-bold text-green-400">{step.title}</h3>
               <p className="text-gray-400">{step.description}</p>
             </div>
