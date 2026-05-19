@@ -30,6 +30,7 @@ export default function Layout({ children, title, description }) {
             <Link href="/#features" className="hover:text-white transition">Features</Link>
             <Link href="/#how-it-works" className="hover:text-white transition">How it works</Link>
             <Link href="/#faq" className="hover:text-white transition">FAQ</Link>
+            <Link href="/support" className="hover:text-white transition">Support</Link>
           </div>
 
           <div className="flex items-center gap-4">
@@ -63,7 +64,6 @@ export default function Layout({ children, title, description }) {
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-6">
           <Link href="/privacy" className="hover:text-white transition">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-white transition">Terms of Service</Link>
-          <Link href="/support" className="hover:text-white transition">Support</Link>
         </div>
         <p>&copy; 2026 RICE Pay. All rights reserved.</p>
         <p className="mt-2 opacity-50">Powered by Unitas Atlas Global LLC</p>

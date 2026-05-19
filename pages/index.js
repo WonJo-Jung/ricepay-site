@@ -1,6 +1,33 @@
 import { APP_STORE_LINK } from "../constants";
 import SocialLinks from "../components/SocialLinks";
 
+const howItWorksSteps = [
+  {
+    number: "01",
+    title: "Connect Wallet",
+    description: "Accept the connection request from RICE Pay to link your hot wallet. Once connected, you can manage and save recipient details.",
+    videoSrc: "/videos/step1.mp4",
+  },
+  {
+    number: "02",
+    title: "Select Recipient",
+    description: "Save information to reduce repeated address copy-and-paste.",
+    videoSrc: "/videos/step2.mp4",
+  },
+  {
+    number: "03",
+    title: "Review Fees",
+    description: "See amount and fees clearly before you confirm the transfer.",
+    videoSrc: "/videos/step3.mp4",
+  },
+  {
+    number: "04",
+    title: "Send on Base",
+    description: "Confirm the transaction and complete the transfer instantly.",
+    videoSrc: "/videos/step4.mp4",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -85,29 +112,28 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section id="how-it-works" className="py-24 px-6 max-w-5xl mx-auto text-center text-white">
+      <section id="how-it-works" className="py-24 px-6 max-w-6xl mx-auto text-center text-white">
         <h2 className="text-4xl font-bold mb-16">How It Works</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div className="space-y-4">
-            <div className="text-5xl font-black text-white/10">01</div>
-            <h3 className="text-xl font-bold text-green-400">Connect Wallet</h3>
-            <p className="text-gray-400">Accept the connection request from RICE Pay to link your hot wallet. Once connected, you can manage and save recipient details.</p>
-          </div>
-          <div className="space-y-4">
-            <div className="text-5xl font-black text-white/10">02</div>
-            <h3 className="text-xl font-bold text-green-400">Select Recipient</h3>
-            <p className="text-gray-400">Save information to reduce repeated address copy-and-paste.</p>
-          </div>
-          <div className="space-y-4">
-            <div className="text-5xl font-black text-white/10">03</div>
-            <h3 className="text-xl font-bold text-green-400">Review Fees</h3>
-            <p className="text-gray-400">See amount and fees clearly before you confirm the transfer.</p>
-          </div>
-          <div className="space-y-4">
-            <div className="text-5xl font-black text-white/10">04</div>
-            <h3 className="text-xl font-bold text-green-400">Send on Base</h3>
-            <p className="text-gray-400">Confirm the transaction and complete the transfer instantly.</p>
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {howItWorksSteps.map((step) => (
+            <div key={step.number} className="space-y-4 text-left">
+              <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-black aspect-[1180/2556]">
+                <video
+                  className="h-full w-full object-contain"
+                  controls
+                  muted
+                  playsInline
+                  preload="metadata"
+                  aria-label={`${step.title} demo video`}
+                >
+                  <source src={step.videoSrc} type="video/mp4" />
+                </video>
+              </div>
+              <div className="text-5xl font-black text-white/10">{step.number}</div>
+              <h3 className="text-xl font-bold text-green-400">{step.title}</h3>
+              <p className="text-gray-400">{step.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
