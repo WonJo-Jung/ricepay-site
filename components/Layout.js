@@ -27,6 +27,7 @@ export default function Layout({ children, title, description }) {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+            <Link href="/about" className="hover:text-white transition">About</Link>
             <Link href="/#features" className="hover:text-white transition">Features</Link>
             <Link href="/#how-it-works" className="hover:text-white transition">How it works</Link>
             <Link href="/#faq" className="hover:text-white transition">FAQ</Link>
@@ -50,6 +51,7 @@ export default function Layout({ children, title, description }) {
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-black/95 border-b border-white/10 p-6 flex flex-col gap-6 text-center backdrop-blur-xl">
+            <Link href="/about" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>About</Link>
             <Link href="/#features" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>Features</Link>
             <Link href="/#how-it-works" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>How it works</Link>
             <Link href="/#faq" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
@@ -63,6 +65,8 @@ export default function Layout({ children, title, description }) {
 
       <footer className="py-12 px-6 border-t border-white/5 text-center text-gray-500 text-sm">
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-6">
+          <Link href="/about" className="hover:text-white transition">About</Link>
+          <Link href="/support" className="hover:text-white transition">Support</Link>
           <Link href="/privacy" className="hover:text-white transition">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-white transition">Terms of Service</Link>
         </div>

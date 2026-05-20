@@ -36,10 +36,10 @@ export default function SupportPage() {
 
             <h2 className="text-white text-xl font-bold mt-8">Important Notice</h2>
             <p className="p-4 bg-orange-500/10 border border-orange-500/20 rounded-2xl text-orange-200/80">
-              RICE Pay is a non-custodial service.<br></br>
-              We do not hold or request user funds, private keys, or seed phrases.<br></br>
-              We never ask for funds, private keys, seed phrases, wallet passwords, or other sensitive information.<br></br>
-              If anyone claiming to be RICE Pay support team requests this information, please do not respond.
+              <p>RICE Pay is a non-custodial service.</p>
+              <p>We do not hold or request user funds, private keys, or seed phrases.</p>
+              <p>We never ask for funds, private keys, seed phrases, wallet passwords, or other sensitive information.</p>
+              <p>If anyone claiming to be RICE Pay support team requests this information, please do not respond.</p>
             </p>
           </div>
         </div>
