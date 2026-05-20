@@ -166,7 +166,7 @@ export default function AboutPage() {
                 <dd className="mt-1 flex items-center gap-3 text-lg text-white">
                   <span>WonJo Jung</span>
                   <a
-                    href="https://www.linkedin.com/in/won-jo-jung-9662ba250/"
+                    href="https://www.linkedin.com/in/wonjo-jung-9662ba250"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 transition hover:text-white"
