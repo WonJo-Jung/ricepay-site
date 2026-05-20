@@ -65,8 +65,6 @@ export default function Layout({ children, title, description }) {
 
       <footer className="py-12 px-6 border-t border-white/5 text-center text-gray-500 text-sm">
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-6">
-          <Link href="/about" className="hover:text-white transition">About</Link>
-          <Link href="/support" className="hover:text-white transition">Support</Link>
           <Link href="/privacy" className="hover:text-white transition">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-white transition">Terms of Service</Link>
         </div>
