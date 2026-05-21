@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ricepay.app/sitemap.xml
+Sitemap: https://www.ricepay.app/sitemap.xml

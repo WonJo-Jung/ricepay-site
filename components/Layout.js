@@ -1,18 +1,31 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { APP_STORE_LINK } from "../constants";
 
+const SITE_URL = "https://www.ricepay.app";
+
 export default function Layout({ children, title, description }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
+  const pageTitle = title || "RICE Pay | Simple USDC Transfers on Base";
+  const pageDescription = description || "A non-custodial app for sending USDC on Base.";
+  const canonicalPath = router.asPath.split("#")[0].split("?")[0] || "/";
+  const canonicalUrl = `${SITE_URL}${canonicalPath === "/" ? "/" : canonicalPath}`;
 
   return (
     <>
       <Head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title || "RICE Pay | Simple USDC Transfers on Base"}</title>
-        <meta name="description" content={description || "A non-custodial app for sending USDC on Base."} />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:site_name" content="RICE Pay" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
