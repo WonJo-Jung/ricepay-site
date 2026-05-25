@@ -41,6 +41,7 @@ export default function Layout({ children, title, description }) {
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8 text-sm font-medium text-gray-400">
             <Link href="/about" className="hover:text-white transition">About</Link>
+            <Link href="/getting-started" className="hover:text-white transition">Getting Started</Link>
             <Link href="/#features" className="hover:text-white transition">Features</Link>
             <Link href="/#how-it-works" className="hover:text-white transition">How it works</Link>
             <Link href="/#faq" className="hover:text-white transition">FAQ</Link>
@@ -65,6 +66,7 @@ export default function Layout({ children, title, description }) {
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-black/95 border-b border-white/10 p-6 flex flex-col gap-6 text-center backdrop-blur-xl">
             <Link href="/about" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>About</Link>
+            <Link href="/getting-started" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>Getting Started</Link>
             <Link href="/#features" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>Features</Link>
             <Link href="/#how-it-works" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>How it works</Link>
             <Link href="/#faq" className="text-lg text-gray-300" onClick={() => setIsMenuOpen(false)}>FAQ</Link>

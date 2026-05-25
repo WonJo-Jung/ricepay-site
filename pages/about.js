@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SocialLinks from "../components/SocialLinks";
 
 const riceMeaning = [
@@ -159,7 +160,7 @@ export default function AboutPage() {
             <dl className="space-y-5 text-gray-300">
               <div>
                 <dt className="text-sm uppercase tracking-[0.18em] text-gray-500">Company</dt>
-                <dd className="mt-1 text-lg text-white">Unitas Atlas Global LLC (Wyoming, USA)</dd>
+                <dd className="mt-1 text-lg text-white"><a href="https://www.unitasatlasglobal.com" target="_blank" rel="noopener noreferrer"><span style={{ textDecoration: 'underline' }}>Unitas Atlas Global LLC</span></a></dd>
               </div>
               <div>
                 <dt className="text-sm uppercase tracking-[0.18em] text-gray-500">Founder & Builder & Developer</dt>
