@@ -19,6 +19,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.ricepay.app/transparency</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ricepay.app/getting-started/before-you-start</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
