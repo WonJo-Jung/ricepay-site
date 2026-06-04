@@ -3,7 +3,7 @@ import Head from "next/head";
 const CONTRACT_ADDRESS = "0x1dD8667e22F9fAb8C2Be7E2021fAE0C8FB5457Ba";
 const BASESCAN_URL = `https://basescan.org/address/${CONTRACT_ADDRESS}#code`;
 const GITHUB_SOURCE_URL =
-  "https://github.com/WonJo-Jung/RICEpay_web/tree/9d2201ff52bb2fe4582e44e9223ac3add828f756/packages/contracts";
+  "https://github.com/WonJo-Jung/RICEpay_web/tree/main/packages/contracts";
 
 export default function TransparencyPage() {
   return (
