@@ -30,6 +30,7 @@ export default function Layout({ children, title, description }) {
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+        <meta name="base:app_id" content="6a3008cdc2ce3b3db57ed262" />
       </Head>
 
       <nav className="fixed w-full z-[100] px-6 py-4 bg-black/50 backdrop-blur-md border-b border-white/5">
